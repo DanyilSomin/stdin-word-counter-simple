@@ -9,7 +9,11 @@ int main()
     do {
         std::string tmpStr;
         std::cin >> tmpStr;
-        words->insert(tmpStr);
+
+        if (tmpStr.size())
+        {
+            words.insert(tmpStr);
+        }
     }
     while (std::cin.peek() == ' ');
 
